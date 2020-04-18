@@ -1,0 +1,63 @@
+
+body 
+    {
+    background-image: url(fondo-luna-carlos1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:black;   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+hr{ 
+    color: rgb(143, 199, 231); 
+    width:"100%";
+    text-align:"left"; 
+    margin-top: 0px;
+}
+.datos{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 64px;
+    color: rgb(221, 180, 127);
+    color: rgb(145, 158, 163);
+    background-color:rgb(155, 223, 146);
+    margin-top: 50px;
+    margin-left: 330px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:100px;
+    border-color:rgb(182, 184, 35);
+}
+
+.respuesta{
+    height: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 21px;
+    width: 90% ;
+    color: rgb(35, 137, 184);
+    border-color: aqua;
+    border-radius: 41px 41px 41px 41px;
+    position: relative;
+    margin-top: 200px;
+}
+
+.boton {
+    top: 70px;
+    text-decoration:none;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    background: rgb(155, 223, 146);
+    float: right;
+    margin-right: 0px;
+    margin-top: 50px;
+    width: 100px;
+    padding-top:55px;
+    padding-bottom:15px;
+    padding-left:40px;
+    padding-right:40px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:100px;
+    border-color:rgb(182, 184, 35);
+    position: static;
+}    

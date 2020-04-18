@@ -1,0 +1,21 @@
+{
+  "name": "codigodebarras",
+  "version": "1.0.0",
+  "description": "ts, webpack, lint",
+  "scripts": {
+    "build": "webpack --config webpack.dev.config.js",
+    "start": "webpack-dev-server --config webpack.dev.config.js --open"
+  },
+  "author": "Fornt",
+  "license": "",
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.2",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "jquery": "^3.5.0"
+  }
+}
