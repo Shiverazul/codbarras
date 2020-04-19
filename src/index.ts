@@ -32,7 +32,7 @@ function introValor() {
             let searchTerm = (<HTMLInputElement>document.getElementById('searchTerm')).value + e.key;
             searchTerm=searchTerm.toLocaleLowerCase() 
             //            console.log(ddbb);
-            var encontrado = ddbb.filter(function (element) {
+            var encontrado = ddbb.filter(function(element) {
 
                 return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
                        element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
@@ -50,18 +50,19 @@ function introValor() {
                 const td2=document.createElement("td");
                     td2.innerHTML=element.descripcion;
                     node.appendChild(td2);
-                    const td3=document.createElement("td");
+                const td3=document.createElement("td");
                     td3.innerHTML=element.precio;
                     node.appendChild(td3);
                     table.appendChild(node);
-                    const td4=document.createElement("td");
-                    td3.innerHTML=element.stock;
+                const td4=document.createElement("td");
+                    td4.innerHTML=element.stock;
                     node.appendChild(td4);
                     table.appendChild(node);
             })                
             document.getElementById('resulDescripcion').appendChild(table);                   
          }
     })
+
 }
 function Borrar() {
     
