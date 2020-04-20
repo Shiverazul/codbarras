@@ -1,6 +1,8 @@
 init();
 
-const $ = require("jquery")
+
+const $ = require("jquery");
+
 
 let ddbb = null
 $.getJSON("A-HTML.json", function (JSON) {
@@ -13,15 +15,16 @@ function aclaradoTabla() {
 //var table = document.getElementById("table"); Table.innerHTML = ""; 
 //const table=document.createElement("table")
 //        document.getElementById("table").innerHTML = ""; 
-
 }
+
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
         Borrar();
     });
 
-    introValor()
+    introValor();
 }
+
 function introValor() {
 
     document.getElementById("searchTerm").addEventListener("keypress", (e) => {
@@ -40,10 +43,13 @@ function introValor() {
                        element.descripcion.toLocaleLowerCase().includes(searchTerm);
             })
             const table=document.createElement("table")
-  
+                 
             console.log(encontrado)
             encontrado.forEach(element=>{
                 const node=document.createElement("tr");
+                node.addEventListener("click", () => {
+                    console.log(element.descripcion);
+                });
                 const td1=document.createElement("td");
                     td1.innerHTML=element.articulo;
                     node.appendChild(td1);
@@ -55,7 +61,8 @@ function introValor() {
                     node.appendChild(td3);
                     table.appendChild(node);
                 const td4=document.createElement("td");
-                    td4.innerHTML=element.stock;
+                  td4.setAttribute('style','color: green');
+                  td4.innerHTML=element.stock;
                     node.appendChild(td4);
                     table.appendChild(node);
             })                
