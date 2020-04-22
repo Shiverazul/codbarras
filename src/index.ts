@@ -32,6 +32,7 @@ function introValor() {
             let searchTerm = (<HTMLInputElement>document.getElementById('searchTerm')).value + e.key;
             searchTerm=searchTerm.toLocaleLowerCase() 
             //            console.log(ddbb);
+            alert(e.key);
             var encontrado = ddbb.filter(function(element) {
 
                 return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
@@ -41,7 +42,7 @@ function introValor() {
             })
             const table=document.createElement("table")
                  
-            console.log(encontrado)
+            //console.log(encontrado)
             encontrado.forEach(element=>{
                 const node=document.createElement("tr");
                 node.addEventListener("click", () => {
