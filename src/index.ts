@@ -1,8 +1,6 @@
 init();
 
-
 const $ = require("jquery");
-
 
 let ddbb = null
 $.getJSON("A-HTML.json", function (JSON) {
@@ -26,7 +24,6 @@ function init() {
 }
 
 function introValor() {
-
     document.getElementById("searchTerm").addEventListener("keypress", (e) => {
         $("#table").remove();
 //        document.getElementById("table").innerHTML = "";
@@ -50,9 +47,10 @@ function introValor() {
                 node.addEventListener("click", () => {
                     console.log(element.descripcion);
                 });
+
                 const td1=document.createElement("td");
                     td1.innerHTML=element.articulo;
-                    node.appendChild(td1);
+//                    node.appendChild(td1);
                 const td2=document.createElement("td");
                     td2.innerHTML=element.descripcion;
                     node.appendChild(td2);
@@ -106,4 +104,4 @@ function Borrar() {
 
 	//FOREACH
 //	arr.forEach( (elem) => console.log(elem));
-//	
+//	 
