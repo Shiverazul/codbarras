@@ -17,7 +17,7 @@ body
     font-size: 20px;
     color: black;
     background: rgb(155, 223, 146);
-    background-color:rgbrgb(109, 130, 248);
+    background-color:rgb(109, 130, 248);
      float: right;
     margin-right: 0px;
     margin-top: 10px;
@@ -50,7 +50,6 @@ hr{
     border-style: solid;
     border-radius:100px;
     border-color:rgb(182, 184, 35);
-
 }
 
 .respuesta{
