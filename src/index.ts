@@ -26,7 +26,6 @@ function init() {
 function introValor() {
     document.getElementById("searchTerm").addEventListener("keydown", (e) => {
         $("#table").remove();
-//        document.getElementById("table").innerHTML = "";
         (document.getElementById('resulDescripcion')).innerHTML = "";
             
 
@@ -35,7 +34,7 @@ function introValor() {
             let searchTerm = (<HTMLInputElement>document.getElementById('searchTerm')).value + e.key;
             searchTerm=searchTerm.toLocaleLowerCase() 
             //console.log(e.key);
-            //alert(e.key);
+            alert(e.key);
             var encontrado = ddbb.filter(function(element) {
 
                 return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
