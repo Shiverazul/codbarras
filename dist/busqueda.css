@@ -16,16 +16,17 @@ body
     font-weight: 600; 
     font-size: 20px;
     color: black;
-    background-color:rgb(109, 130, 248);
     background: rgb(155, 223, 146);
+
+    background-color:rgb(109, 130, 248);
     float: right;
     margin-right: 0px;
     margin-top: 10px;
     width: 100px;
     padding-top:15px;
     padding-bottom:15px;
-    padding-left:40px;
-    padding-right:40px;
+    padding-left:15px;
+    padding-right:15px;
     border-width: 3px;
     border-style: solid;
     border-radius:100px;
