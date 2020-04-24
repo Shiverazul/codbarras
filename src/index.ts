@@ -24,17 +24,22 @@ function init() {
 }
 
 function introValor() {
-    document.getElementById("searchTerm").addEventListener("keydown", (e) => {
+//    document.getElementById("searchTerm").addEventListener("keydown", (e) => {
+
+
+
+
+//hasta aqui
+    document.getElementById("searchTerm").addEventListener("keyup", (e) => {
+
         $("#table").remove();
         (document.getElementById('resulDescripcion')).innerHTML = "";
-            
-
 
         if (e.key !== "Enter") {
             let searchTerm = (<HTMLInputElement>document.getElementById('searchTerm')).value + e.key;
             searchTerm=searchTerm.toLocaleLowerCase() 
             //console.log(e.key);
-            alert(e.key);
+            //alert(e.key);
             var encontrado = ddbb.filter(function(element) {
 
                 return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
