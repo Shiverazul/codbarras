@@ -1,11 +1,39 @@
+
 const $ = require("jquery");
-
-init();
-
 let ddbb = null;
 $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
+
+document.body.requestFullscreen();
+
+function pantallaCompleta(elem) {
+    //Si el navegador es Mozilla Firefox
+    if(elem.mozRequestFullScreen) {
+      elem.mozRequestFullScreen();
+    }
+    //Si el navegador es Google Chrome
+    else if(elem.webkitRequestFullScreen) {
+      elem.webkitRequestFullScreen();
+    }
+    //Si el navegador es otro
+    else if(elem.requestFullScreen) { 
+      elem.requestFullScreen(); 
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+init();
+
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
