@@ -1,19 +1,11 @@
-init();
-
 const $ = require("jquery");
 
-let ddbb = null
+init();
+
+let ddbb = null;
 $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
-function aclaradoTabla() {
-//    (document.getElementById('table')).nodeValue = "";
-//    $("#table_of_items tr").remove();
-//    $("table id tr").remove()
-//var table = document.getElementById("table"); Table.innerHTML = ""; 
-//const table=document.createElement("table")
-//        document.getElementById("table").innerHTML = ""; 
-}
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -23,66 +15,64 @@ function init() {
     introValor();
 }
 
+
 function introValor() {
-//    document.getElementById("searchTerm").addEventListener("keydown", (e) => {
 
+    $(document).ready(function () {
 
+        $("#searchTerm").on("input", function () {
 
-
-//hasta aqui
-    document.getElementById("searchTerm").addEventListener("keyup", (e) => {
-
-        $("#table").remove();
-        (document.getElementById('resulDescripcion')).innerHTML = "";
-
-        if (e.key !== "Enter") {
-            let searchTerm = (<HTMLInputElement>document.getElementById('searchTerm')).value + e.key;
-            searchTerm=searchTerm.toLocaleLowerCase() 
-            //console.log(e.key);
-            //alert(e.key);
-            var encontrado = ddbb.filter(function(element) {
+            $("#table").remove();
+            (document.getElementById('resulDescripcion')).innerHTML = "";
+            let idx = 1;
+            let searchTerm = ($(this).val());
+            searchTerm = searchTerm.toLocaleLowerCase();
+            var encontrado = ddbb.filter(function (element) {
 
                 return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
-                       element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
-                       element.codprov.toLocaleLowerCase().includes(searchTerm) ||
-                       element.descripcion.toLocaleLowerCase().includes(searchTerm);
+                    element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
+                    element.codprov.toLocaleLowerCase().includes(searchTerm) ||
+                    element.descripcion.toLocaleLowerCase().includes(searchTerm);
             })
-            const table=document.createElement("table")
-                 
-            //console.log(encontrado)
-            encontrado.forEach(element=>{
-                const node=document.createElement("tr");
+
+            const table = document.createElement("table")
+            encontrado.forEach(element => {
+                const node = document.createElement("tr");
                 node.addEventListener("click", () => {
-                    console.log(element.descripcion);
+                    alert(element.descripcion)
                 });
 
-                const td1=document.createElement("td");
-                    td1.innerHTML=element.articulo;
-//                    node.appendChild(td1);
-                const td2=document.createElement("td");
-                    td2.innerHTML=element.descripcion;
+                if (idx <= 50) {
+//                    console.log(idx);
+
+                    const td2 = document.createElement("td");
+                    td2.innerHTML = element.descripcion;
                     node.appendChild(td2);
-                const td3=document.createElement("td");
-                    td3.innerHTML=element.precio;
+                    table.appendChild(node);
+                    const td3 = document.createElement("td");
+                    td3.innerHTML = element.precio;
                     node.appendChild(td3);
                     table.appendChild(node);
-                const td4=document.createElement("td");
-                  td4.setAttribute('style','color: green');
-                  td4.innerHTML=element.stock;
+                    const td4 = document.createElement("td");
+                    td4.setAttribute('style', 'color: green');
+                    td4.innerHTML = element.stock;
                     node.appendChild(td4);
                     table.appendChild(node);
-            })                
-            document.getElementById('resulDescripcion').appendChild(table);                   
-         }
-    })
+                    document.getElementById('resulDescripcion').appendChild(table);
+                    ++idx;
 
+                }
+            })
+        })
+    })
 }
+
 function Borrar() {
-    
+
     (<HTMLInputElement>document.getElementById('searchTerm')).value = "";
     document.getElementById('searchTerm').focus();
     //@ts-ignore
-    (document.getElementById('resulDescripcion')).innerHTML = "";
+    (document.getElementById('resulDescripcion')).innerHTML = ""
 }
 
 //FILTRO
@@ -113,3 +103,4 @@ function Borrar() {
 	//FOREACH
 //	arr.forEach( (elem) => console.log(elem));
 //	 
+
