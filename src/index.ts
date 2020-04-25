@@ -28,6 +28,7 @@ function pantallaCompleta(elem) {
       alert("otro pantallaCompleta");
     }
   }
+  
 
 
   init();
