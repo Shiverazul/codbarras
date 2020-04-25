@@ -45,14 +45,14 @@ hr{
     font-size: 30px;
     color: black;
     background-color: rgb(159, 190, 204);
-    background-color:rgb(109, 130, 248);
-    margin-top: 100px;
+    background-color: rgb(109, 130, 248);
+    margin-top: 90px;
     margin-left: 0px;
     border-width: 3px;
     border-style: solid;
     border-radius:100px;
     border-color:rgb(182, 184, 35);
-    width: 90% ;
+    width: 100% ;
  
 }
 
@@ -64,6 +64,6 @@ hr{
     color: rgb(35, 137, 184);
 
     position: relative;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: 15px;
 }

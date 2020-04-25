@@ -7,32 +7,7 @@ $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
 
-
-//document.body.requestFullscreen();
-
-function pantallaCompleta(elem) {
-    //Si el navegador es Mozilla Firefox
-    if(elem.mozRequestFullScreen) {
-      elem.mozRequestFullScreen();
-      alert("mozilla pantallaCompleta");
-
-    }
-    //Si el navegador es Google Chrome
-    else if(elem.webkitRequestFullScreen) {
-      elem.webkitRequestFullScreen();
-      alert("chrome pantallaCompleta");
-    }
-    //Si el navegador es otro
-    else if(elem.requestFullScreen) { 
-      elem.requestFullScreen(); 
-      alert("otro pantallaCompleta");
-    }
-  }
-  
-
-
   init();
-
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -41,7 +16,6 @@ function init() {
 
     introValor();
 }
-
 
 function introValor() {
 
@@ -70,7 +44,6 @@ function introValor() {
                 });
 
                 if (idx <= 80) {
-//                    console.log(idx);
 
                     const td2 = document.createElement("td");
                     td2.innerHTML = element.descripcion;
@@ -101,6 +74,9 @@ function Borrar() {
     //@ts-ignore
     (document.getElementById('resulDescripcion')).innerHTML = ""
 }
+
+
+
 
 //FILTRO
 //function doSearch() {
