@@ -14,17 +14,18 @@ function pantallaCompleta(elem) {
     //Si el navegador es Mozilla Firefox
     if(elem.mozRequestFullScreen) {
       elem.mozRequestFullScreen();
+      alert("mozilla pantallaCompleta");
+
     }
     //Si el navegador es Google Chrome
     else if(elem.webkitRequestFullScreen) {
       elem.webkitRequestFullScreen();
-      alert("chrome pantallaCompleta")
+      alert("chrome pantallaCompleta");
     }
     //Si el navegador es otro
     else if(elem.requestFullScreen) { 
       elem.requestFullScreen(); 
       alert("otro pantallaCompleta");
-
     }
   }
 
@@ -67,7 +68,7 @@ function introValor() {
                     alert(element.descripcion)
                 });
 
-                if (idx <= 50) {
+                if (idx <= 80) {
 //                    console.log(idx);
 
                     const td2 = document.createElement("td");
