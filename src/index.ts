@@ -7,6 +7,7 @@ $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
 
+
 //document.body.requestFullscreen();
 
 function pantallaCompleta(elem) {
@@ -17,24 +18,18 @@ function pantallaCompleta(elem) {
     //Si el navegador es Google Chrome
     else if(elem.webkitRequestFullScreen) {
       elem.webkitRequestFullScreen();
+      alert("chrome pantallaCompleta")
     }
     //Si el navegador es otro
     else if(elem.requestFullScreen) { 
       elem.requestFullScreen(); 
+      alert("otro pantallaCompleta");
+
     }
   }
 
 
-
-
-
-
-
-
-
-
-
-init();
+  init();
 
 
 function init() {
