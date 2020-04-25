@@ -1,11 +1,13 @@
 
 const $ = require("jquery");
+
 let ddbb = null;
+
 $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
 
-document.body.requestFullscreen();
+//document.body.requestFullscreen();
 
 function pantallaCompleta(elem) {
     //Si el navegador es Mozilla Firefox
