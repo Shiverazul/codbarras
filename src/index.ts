@@ -27,20 +27,26 @@ function introValor() {
             (document.getElementById('resulDescripcion')).innerHTML = "";
             let idx = 1;
             let searchTerm = ($(this).val());
-            searchTerm = searchTerm.toLocaleLowerCase();
-            var encontrado = ddbb.filter(function (element) {
 
-                return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
-                    element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
-                    element.codprov.toLocaleLowerCase().includes(searchTerm) ||
-                    element.descripcion.toLocaleLowerCase().includes(searchTerm);
+            searchTerm = searchTerm.toLocaleLowerCase();
+
+            var encontrado = ddbb.filter(function (element) {
+                if (isNaN(searchTerm)) {  //si es numero o no 
+                    return element.descripcion.toLocaleLowerCase().includes(searchTerm);
+                }
+                else {
+                    return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
+                        element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
+                        element.codprov.toLocaleLowerCase().includes(searchTerm) ;
+                } 
             })
 
             const table = document.createElement("table")
             encontrado.forEach(element => {
                 const node = document.createElement("tr");
                 node.addEventListener("click", () => {
-                    alert(element.descripcion)
+
+                    tabla2(element);
                 });
 
                 if (idx <= 80) {
@@ -75,7 +81,22 @@ function Borrar() {
     (document.getElementById('resulDescripcion')).innerHTML = ""
 }
 
+function tabla2(element) {
+    const table2 = document.createElement("table")
+        const node = document.createElement("tr");
 
+        const td1 = document.createElement("td");
+            td1.innerHTML = element.descripcion;
+            node.appendChild(td1);
+            table2.appendChild(node);
+        const td2 = document.createElement("td");
+            td2.innerHTML = element.precio;
+            node.appendChild(td2);
+            table2.appendChild(node);
+        
+        document.getElementById('resulDescripcion2').appendChild(table2);
+
+}
 
 
 //FILTRO

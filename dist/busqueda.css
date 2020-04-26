@@ -62,7 +62,16 @@ hr{
     font-size: 13px;
     width: 90% ;
     color: rgb(35, 137, 184);
-
+    position: relative;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+.respuesta2{
+    height: 48px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    width: 90% ;
+    color: white;
     position: relative;
     margin-top: 50px;
     margin-left: 15px;
