@@ -96,6 +96,7 @@ function tabla2(element) {
         
         document.getElementById('resulDescripcion2').appendChild(table2);
 
+
 }
 
 
