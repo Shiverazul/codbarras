@@ -7,7 +7,11 @@ $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
 
-  init();
+document.getElementById("table3").innerHTML= "<tr><td>Descricion</td><td>Precio</td><td>Cant</td><td>Desc</td><td>TOTAL</td></tr>";
+
+
+
+init();
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -82,7 +86,7 @@ function Borrar() {
 }
 
 function tabla2(element) {
-    const table2 = document.createElement("table")
+    const table2 = document.getElementById("table3");
         const node = document.createElement("tr");
 
         const td1 = document.createElement("td");
@@ -93,12 +97,28 @@ function tabla2(element) {
             td2.innerHTML = element.precio;
             node.appendChild(td2);
             table2.appendChild(node);
-        
-        document.getElementById('resulDescripcion2').appendChild(table2);
+        const td3 = document.createElement("td");
+            td3.innerHTML = "1";
+            node.appendChild(td3);
+            table2.appendChild(node);
+        const td4 = document.createElement("td");
+            td4.innerHTML = "";
+            node.appendChild(td4);
+            table2.appendChild(node);
+        const td5 = document.createElement("td");
+            td5.innerHTML = element.precio;
+            node.appendChild(td5);
+            table2.appendChild(node);
+//          console.log(table2) ;       
+        //document.getElementById('resulDescripcion2').appendChild(table2);
+//tabla3
+//        document.getElementById('table3').appendChild(table2);
 
 
-}
 
+}       
+
+    
 
 //FILTRO
 //function doSearch() {

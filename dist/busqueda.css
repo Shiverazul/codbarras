@@ -18,8 +18,8 @@ body
     color: black;
     background: rgb(155, 223, 146);
     background-color:rgb(109, 130, 248);
+    background-color: red;
     float: right;
-
     margin-right: 0px;
     margin-top: 10px;
     width: 100px;
@@ -31,14 +31,7 @@ body
     border-style: solid;
     border-radius:100px;
     border-color:rgb(182, 184, 35);
- 
 }    
-hr{ 
-    color: rgb(143, 199, 231); 
-    width:"100%";
-    text-align:"left"; 
-    margin-top: 0px;
-}
 .datos{
     font-family:'Times New Roman', Times, serif;
     font-size: 30px;
@@ -56,7 +49,6 @@ hr{
 }
 
 .respuesta{
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 13px;
     width: 90% ;
@@ -73,4 +65,18 @@ hr{
     position: relative;
     margin-top: 50px;
     margin-left: 15px;
+}
+
+.table2 td:first-child {
+	width: 60%;
+}
+
+.table2{
+    table-layout: fixed;
+    color: lightgreen;
+    text-align: justify;
+    border: 1px solid blue;
+    width: 100%;
+    word-111wrap: break-word;
+
 }
