@@ -7,7 +7,7 @@ $.getJSON("A-HTML.json", function (JSON) {
     ddbb = JSON;
 });
 
-document.getElementById("table3").innerHTML= "<tr><td>Descricion</td><td>Precio</td><td>Cant</td><td>Desc</td><td>TOTAL</td></tr>";
+document.getElementById("table3").innerHTML= "<tr><th>Descricion</th><th>Precio</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
 
 
@@ -98,6 +98,11 @@ function tabla2(element) {
             node.appendChild(td2);
             table2.appendChild(node);
         const td3 = document.createElement("td");
+
+        node.addEventListener("click", () => {
+            alert(element);
+        });
+
             td3.innerHTML = "1";
             node.appendChild(td3);
             table2.appendChild(node);
@@ -109,16 +114,7 @@ function tabla2(element) {
             td5.innerHTML = element.precio;
             node.appendChild(td5);
             table2.appendChild(node);
-//          console.log(table2) ;       
-        //document.getElementById('resulDescripcion2').appendChild(table2);
-//tabla3
-//        document.getElementById('table3').appendChild(table2);
-
-
-
 }       
-
-    
 
 //FILTRO
 //function doSearch() {

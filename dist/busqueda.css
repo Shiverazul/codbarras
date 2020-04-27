@@ -70,9 +70,13 @@ body
 .table2 td:first-child {
 	width: 60%;
 }
+.table2 th:first-child {
+	width: 60%;
+}
 
 .table2{
     table-layout: fixed;
+    font-size: 10px;
     color: lightgreen;
     text-align: justify;
     border: 1px solid blue;
