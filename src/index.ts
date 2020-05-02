@@ -1,10 +1,10 @@
-import { Elemento } from './class.element';
+        import { Elemento } from './class.element';
 const $ = require("jquery");
 
 let ddbb: Array<Elemento> = [];
 
 $(document).ready(function () {
-    document.getElementById("table3").innerHTML = "<tr><th>Descricion</th><th>Precio</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
+    document.getElementById("table3").innerHTML = "<tr><th></th><th>Descricion</th><th>Precio</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
@@ -86,45 +86,50 @@ function tabla2(element) {
 
     const table2 = document.getElementById("table3");
     const node = document.createElement("tr");
-
     const td1 = document.createElement("td");
-    td1.innerHTML = element.descripcion;
     node.appendChild(td1);
     table2.appendChild(node);
+        td1.addEventListener("click", () => {
+            table2.removeChild(node)
+            getTotal();
+        });
+
     const td2 = document.createElement("td");
-    td2.innerHTML = element.precio;
+    td2.innerHTML = element.descripcion;
     node.appendChild(td2);
-     table2.appendChild(node);
+    table2.appendChild(node);
     const td3 = document.createElement("td");
+    td3.innerHTML = element.precio;
+    node.appendChild(td3);
+     table2.appendChild(node);
+    const td4 = document.createElement("td");
     const newcantidad = document.createElement("input");
     newcantidad.value = "1";
     newcantidad.className = "noinput";
-    //           node.addEventListener("click", () => {
-    //            alert(element);
-    //        });
-    td3.appendChild(newcantidad); //introduzco input dentro de td3
-    node.appendChild(td3);
+    td4.appendChild(newcantidad); //introduzco input dentro de td4
+    node.appendChild(td4);
     table2.appendChild(node);
 
 
-    const td4 = document.createElement("td");
+    const td5 = document.createElement("td");
 
     const newdescuento = document.createElement("input");
     newdescuento.value = "0";
     newdescuento.className = "noinput";
-    td4.appendChild(newdescuento); //introduzco input dentro de td4
-    node.appendChild(td4);
+    td5.appendChild(newdescuento); //introduzco input dentro de td4
+    node.appendChild(td5);
     table2.appendChild(node);
 
-    const td5 = document.createElement("td");
+    const td6 = document.createElement("td");
     const newtotal = document.createElement("input");
     newtotal.value = element.precio;
 
     newtotal.className = "noinput total";
-    td5.appendChild(newtotal); //introduzco input dentro de td5
+    td6.appendChild(newtotal); //introduzco input dentro de td6
 
-    node.appendChild(td5);
+    node.appendChild(td6);
     table2.appendChild(node);
+
     getTotal()
     $(newcantidad).on("input", function () {
         anadirPreciodeElemento(element.precio, +newcantidad.value, +newdescuento.value, newtotal);

@@ -90,17 +90,26 @@ body
     border-radius:100px;
     border-color:rgb(182, 184, 35);
 }    
-
-.table2 td:first-child {
-	width: 60%;
-}
 .table2 th:first-child {
-	width: 60%;
+    width: 15px;
+    background-color:lightgreen;
 }
+.table2 td:first-child {
+	width: 15px;
+    background-color:lightgreen;
+}
+.table2 th:nth-child(2) {
+	width: 50%;
+}
+.table2 td:nth-child(2) {
+	width: 50%;
+}
+
+
 
 .table2{
     table-layout: fixed;
-    font-size: 10px;
+    font-size: 12px;
     color: lightgreen;
     text-align: justify;
     border: 1px solid blue;
@@ -108,8 +117,9 @@ body
     word-wrap: break-word;
 }
 .noinput{
-        width: 100%;
-        background: none;
-        border: none;
-        color: lightgreen;
-    }
+    font-size: 10px;
+    width: 100%;
+    background: none;
+    border: none;
+    color: lightgreen;
+}
