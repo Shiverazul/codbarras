@@ -4,7 +4,7 @@ const $ = require("jquery");
 let ddbb: Array<Elemento> = [];
 
 $(document).ready(function () {
-    document.getElementById("table3").innerHTML = "<tr><th></th><th>Descricion</th><th>Precio</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
+    document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripcio</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
