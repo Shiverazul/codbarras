@@ -110,7 +110,8 @@ function tabla2(element) {
      table2.appendChild(node);
     const td4 = document.createElement("td");
     const newcantidad = document.createElement("input");
-    newcantidad.value = "1";
+    $("newcantidad").attr("type", "number");
+    newcantidad.value = "1" ;
     newcantidad.className = "noinput";
     td4.appendChild(newcantidad); //introduzco input dentro de td4
     node.appendChild(td4);
@@ -120,7 +121,7 @@ function tabla2(element) {
     const td5 = document.createElement("td");
 
     const newdescuento = document.createElement("input");
-    newdescuento.value = "0";
+    $(newdescuento).attr("type","number").value = "0";
     newdescuento.className = "noinput";
     td5.appendChild(newdescuento); //introduzco input dentro de td4
     node.appendChild(td5);
@@ -138,6 +139,7 @@ function tabla2(element) {
 
     getTotal()
     $(newcantidad).on("input", function () {
+
         anadirPreciodeElemento(element.precio, +newcantidad.value, +newdescuento.value, newtotal);
         getTotal();
     });
