@@ -1,10 +1,14 @@
-        import { Elemento } from './class.element';
+import { Elemento } from './class.element';
 const $ = require("jquery");
 
 let ddbb: Array<Elemento> = [];
 
+var f = new Date();
+
+document.getElementById('fecha').innerHTML = f.getDate() + "-" +(f.getMonth()+1) + "-" +f.getFullYear();
+
 $(document).ready(function () {
-    document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripcio</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
+    document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
@@ -12,6 +16,8 @@ $(document).ready(function () {
         init();
     });
 });
+
+
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -76,7 +82,7 @@ function introValor() {
 function Borrar() {
 
     (<HTMLInputElement>document.getElementById('searchTerm')).value = "";
-    document.getElementById('searchTerm').focus();
+//    document.getElementById('searchTerm').focus();
     //@ts-ignore
     (document.getElementById('resulDescripcion')).innerHTML = ""
 }
