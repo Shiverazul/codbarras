@@ -111,8 +111,7 @@ function tabla2(element) {
     const td4 = document.createElement("td");
     const newcantidad = document.createElement("input");
     newcantidad.className = "noinput";
-    $("newcantidad").attr("type", "number");
-    newcantidad.value = "1" ;
+    $("newcantidad").attr("type", "tel").value = 1 ;
     td4.appendChild(newcantidad); //introduzco input dentro de td4
     node.appendChild(td4);
     table2.appendChild(node);
@@ -122,7 +121,7 @@ function tabla2(element) {
 
     const newdescuento = document.createElement("input");
     newdescuento.className = "noinput";
-    $(newdescuento).attr("type","tel").value = "0";
+    $(newdescuento).attr("type","tel").value = 0;
     td5.appendChild(newdescuento); //introduzco input dentro de td4
     node.appendChild(td5);
     table2.appendChild(node);
