@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
-
+        console.log(Elemento);
         init();
     });
 });
