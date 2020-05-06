@@ -1,21 +1,23 @@
 import { Elemento } from './class.element';
 const $ = require("jquery");
 
+//@ts-ignore
+import html2canvas from 'html2canvas';
+
 let ddbb: Array<Elemento> = [];
 
 var f = new Date();
-//var mm=(f.getMonth() +1) ; if (mm<10) { mm= 0+mm};
-//var dd=f.getDate()     ; if (dd<10)   { dd= 0+dd};
 var dd = String(f.getDate()).padStart(2, '0');
 var mm = String(f.getMonth() + 1).padStart(2, '0'); //January is 0!
-document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" +f.getFullYear();
+document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" + f.getFullYear();
+
 
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
-//        console.log(Elemento);
+        //        console.log(Elemento);
         init();
     });
 });
@@ -85,7 +87,7 @@ function introValor() {
 function Borrar() {
 
     (<HTMLInputElement>document.getElementById('searchTerm')).value = "";
-//    document.getElementById('searchTerm').focus();
+    //    document.getElementById('searchTerm').focus();
     //@ts-ignore
     (document.getElementById('resulDescripcion')).innerHTML = ""
 }
@@ -98,10 +100,10 @@ function tabla2(element) {
     const td1 = document.createElement("td");
     node.appendChild(td1);
     table2.appendChild(node);
-        td1.addEventListener("click", () => {
-            table2.removeChild(node)
-            getTotal();
-        });
+    td1.addEventListener("click", () => {
+        table2.removeChild(node)
+        getTotal();
+    });
 
     const td2 = document.createElement("td");
     td2.innerHTML = element.descripcion;
@@ -110,11 +112,11 @@ function tabla2(element) {
     const td3 = document.createElement("td");
     td3.innerHTML = element.precio;
     node.appendChild(td3);
-     table2.appendChild(node);
+    table2.appendChild(node);
     const td4 = document.createElement("td");
     const newcantidad = document.createElement("input");
     newcantidad.className = "noinput";
-    $(newcantidad).attr("type", "tel").val(1) ;
+    $(newcantidad).attr("type", "number").val(1);
     td4.appendChild(newcantidad); //introduzco input dentro de td4
     node.appendChild(td4);
     table2.appendChild(node);
@@ -124,7 +126,7 @@ function tabla2(element) {
 
     const newdescuento = document.createElement("input");
     newdescuento.className = "noinput";
-    $(newdescuento).attr("type","tel").val( ) ;
+    $(newdescuento).attr("type", "number").val();
     td5.appendChild(newdescuento); //introduzco input dentro de td4
     node.appendChild(td5);
     table2.appendChild(node);
@@ -155,9 +157,9 @@ function tabla2(element) {
 
 function anadirPreciodeElemento(precio: number, cantidad: number, newdescuento: number, totalElemento: HTMLElement): void {
     //console.log(totalElemento, precio, cantidad);
-    const desc: number = precio*(newdescuento / 100);
+    const desc: number = precio * (newdescuento / 100);
     //console.log(newdescuento)
-    const total: number = (precio-desc )* cantidad;
+    const total: number = (precio - desc) * cantidad;
     (<HTMLInputElement>totalElemento).value = total.toFixed(2);
 }
 
@@ -165,14 +167,20 @@ function getTotal() {
     const elements = $("#table3").find(".total");
     let total: number = 0;
     for (let i = 0; i < elements.length; i++) {
-//        console.log(elements[i].value)
+        //        console.log(elements[i].value)
         total += +elements[i].value;
         document.getElementById('resulTotalisimo').innerHTML = total.toFixed(2)
 
     }
-    
-    //console.log(total);
 }
+
+$("#download").click(() => {
+    html2canvas(document.body).then(canvas => {
+        var link = (<HTMLAnchorElement>document.getElementById('download'));
+        link.href = canvas.toDataURL("image/png")
+        link.download = 'screenshot.png';
+    });
+});
 
 
 
