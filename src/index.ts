@@ -4,15 +4,18 @@ const $ = require("jquery");
 let ddbb: Array<Elemento> = [];
 
 var f = new Date();
-
-document.getElementById('fecha').innerHTML = f.getDate() + "-" +(f.getMonth()+1) + "-" +f.getFullYear();
+//var mm=(f.getMonth() +1) ; if (mm<10) { mm= 0+mm};
+//var dd=f.getDate()     ; if (dd<10)   { dd= 0+dd};
+var dd = String(f.getDate()).padStart(2, '0');
+var mm = String(f.getMonth() + 1).padStart(2, '0'); //January is 0!
+document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" +f.getFullYear();
 
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
-        console.log(Elemento);
+//        console.log(Elemento);
         init();
     });
 });
