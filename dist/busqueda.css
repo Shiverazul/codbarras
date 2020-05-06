@@ -37,7 +37,7 @@ body
     color: black;
     background-color: rgb(159, 190, 204);
     background-color: rgb(109, 130, 248);
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: 0px;
     border-width: 3px;
     border-style: solid;
@@ -58,7 +58,7 @@ body
     width: 90% ;
     color: rgb(35, 137, 184);
     position: relative;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-left: 15px;
 }
 .respuesta3{
