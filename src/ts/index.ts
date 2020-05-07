@@ -11,7 +11,6 @@ var dd = String(f.getDate()).padStart(2, '0');
 var mm = String(f.getMonth() + 1).padStart(2, '0'); //January is 0!
 document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" + f.getFullYear();
 
-
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
@@ -116,7 +115,7 @@ function tabla2(element) {
     const td4 = document.createElement("td");
     const newcantidad = document.createElement("input");
     newcantidad.className = "noinput";
-    $(newcantidad).attr("type", "number").val(1);
+    $(newcantidad).attr("type", "tel").val(1);
     td4.appendChild(newcantidad); //introduzco input dentro de td4
     node.appendChild(td4);
     table2.appendChild(node);
@@ -126,7 +125,7 @@ function tabla2(element) {
 
     const newdescuento = document.createElement("input");
     newdescuento.className = "noinput";
-    $(newdescuento).attr("type", "number").val();
+    $(newdescuento).attr("type", "tel").val();
     td5.appendChild(newdescuento); //introduzco input dentro de td4
     node.appendChild(td5);
     table2.appendChild(node);
@@ -170,19 +169,20 @@ function getTotal() {
         //        console.log(elements[i].value)
         total += +elements[i].value;
         document.getElementById('resulTotalisimo').innerHTML = total.toFixed(2)
-
     }
 }
 
 $("#download").click(() => {
     html2canvas(document.body).then(canvas => {
         var link = (<HTMLAnchorElement>document.getElementById('download'));
-        link.href = canvas.toDataURL("image/png")
-        link.download = 'screenshot.png';
+        var a = $("<a>")
+            .attr("href", canvas.toDataURL("image/png"))
+            .attr("download", "img.png")
+            .appendTo("body");
+        a[0].click();
+        a.remove();
     });
 });
-
-
 
 //FILTRO
 //function doSearch() {
