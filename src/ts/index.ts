@@ -11,18 +11,8 @@ var dd = String(f.getDate()).padStart(2, '0');
 var mm = String(f.getMonth() + 1).padStart(2, '0'); //January is 0!
 document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" + f.getFullYear();
 
-//document.body.style.background="black" ;
-//document.body.style.backgroundImage = "url('https://shiverazul.github.io/citaprevia/dist/assets/fondo-luna-Carlos1.jpg')";
-//document.body.style.backgroundImage = "url('https://shiverazul.github.io/citaprevia/dist/assets/Carles_Cloquell_3-250x186.jpg')";
-//document.body.style.backgroundImage = "url('/Users/Asus/citaprevia/citaprevia/src/img/logo-carlescloquell.png')";
-//document.body.style.backgroundRepeat = "no-repeat";  
-//document.body.style.backgroundAttachment = "fixed"; 
-//document.body.style.backgroundSize   = "75%"; 
-
-
-
-
-
+document.body.style.background="black" ;
+document.body.style.backgroundImage = "url('https://shiverazul.github.io/citaprevia/dist/assets/fondo-luna-Carlos1.jpg')";
 
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
@@ -33,8 +23,6 @@ $(document).ready(function () {
         init();
     });
 });
-
-
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -63,17 +51,16 @@ function introValor() {
                     element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
                     element.codprov.toLocaleLowerCase().includes(searchTerm);
             }
-        })
+        });
 
         const table = document.createElement("table")
         encontrado.forEach(element => {
             const node = document.createElement("tr");
             node.addEventListener("click", () => {
-
                 tabla2(element);
             });
 
-            if (idx <= 80) {
+            if (idx <= 100) {
 
                 const td2 = document.createElement("td");
                 td2.innerHTML = element.descripcion;
@@ -195,7 +182,7 @@ $("#download").click(() => {
         a[0].click();
         a.remove();
     });
-});
+})
 
 //FILTRO
 //function doSearch() {
