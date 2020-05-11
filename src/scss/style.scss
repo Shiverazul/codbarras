@@ -3,15 +3,17 @@ html,body {
 //    background-image: url('https://shiverazul.github.io/citaprevia/dist/assets/fondo-luna-Carlos1.jpg');  
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 75%;    /* 100% pc */
+//    background-size: 75%;    /* 100% pc */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:black;   
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height:100%;
+    height:99%;
+    margin-left: 0px;
+
 }
 
 .contenedor {
-    width: 100%;
+    width: 99%;
     height: 100%;
 }    
 .boton {
@@ -69,7 +71,7 @@ html,body {
     border-style: solid;
     border-radius:100px;
     border-color:rgb(182, 184, 35);
-    width: 100% ;
+    width: 98% ;
  
 }
 .fecha{

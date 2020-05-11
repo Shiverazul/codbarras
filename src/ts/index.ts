@@ -13,6 +13,10 @@ document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" + f.getFullYear
 
 document.body.style.background="black" ;
 document.body.style.backgroundImage = "url('https://shiverazul.github.io/citaprevia/dist/assets/fondo-luna-Carlos1.jpg')";
+document.body.style.backgroundRepeat = "no-repeat";  
+document.body.style.backgroundAttachment = "fixed"; 
+document.body.style.backgroundSize   = "75%"; 
+
 
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
