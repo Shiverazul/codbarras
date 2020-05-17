@@ -18,6 +18,8 @@ document.body.style.backgroundAttachment = "fixed";
 document.body.style.backgroundSize   = "75%"; 
 
 
+
+
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
@@ -28,6 +30,7 @@ $(document).ready(function () {
     });
 });
 
+
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
         Borrar();
@@ -35,6 +38,41 @@ function init() {
 
     introValor();
 }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function introValor() {
     $("#searchTerm").on("input", function () {
@@ -47,6 +85,11 @@ function introValor() {
         searchTerm = searchTerm.toLocaleLowerCase();
 
         var encontrado = ddbb.filter(function (element) {
+                // fecha de la base
+                if (element.descripcion.toLocaleLowerCase().includes("?date")){ // fecha de la base
+                    (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0,8);
+                };
+
             if (isNaN(searchTerm)) {  //si es numero o no 
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
             }
