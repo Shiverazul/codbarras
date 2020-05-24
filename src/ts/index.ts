@@ -107,7 +107,7 @@ function introValor() {
                 tabla2(element);
             });
 
-            if (idx <= 100) {
+            if (idx <= 120) {
 
                 const td2 = document.createElement("td");
                 td2.innerHTML = element.descripcion;
