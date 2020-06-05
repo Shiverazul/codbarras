@@ -114,6 +114,7 @@ function introValor() {
                 node.appendChild(td2);
                 table.appendChild(node);
                 const td3 = document.createElement("td");
+                td3.setAttribute('style', 'color: lightgreen');
                 td3.innerHTML = element.precio + "";
                 node.appendChild(td3);
                 table.appendChild(node);
