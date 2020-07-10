@@ -18097,7 +18097,7 @@ function introValor() {
             node.addEventListener("click", () => {
                 tabla2(element);
             });
-            if (idx <= 50) {
+            if (idx <= 1) {
                 const td2 = document.createElement("td");
                 td2.innerHTML = element.descripcion;
                 node.appendChild(td2);
