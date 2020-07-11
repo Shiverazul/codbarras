@@ -11,11 +11,11 @@ var dd = String(f.getDate()).padStart(2, '0');
 var mm = String(f.getMonth() + 1).padStart(2, '0'); //January is 0!
 document.getElementById('fecha').innerHTML = dd + "-" + mm + "-" + f.getFullYear();
 
-document.body.style.background="black" ;
+document.body.style.background = "black";
 document.body.style.backgroundImage = "url('https://shiverazul.github.io/citaprevia/dist/assets/fondo-luna-Carlos1.jpg')";
-document.body.style.backgroundRepeat = "no-repeat";  
-document.body.style.backgroundAttachment = "fixed"; 
-document.body.style.backgroundSize   = "75%"; 
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundAttachment = "fixed";
+document.body.style.backgroundSize = "75%";
 
 
 
@@ -39,7 +39,7 @@ function init() {
     introValor();
 }
 
-    
+
 
 
 
@@ -76,7 +76,7 @@ function init() {
 
 function introValor() {
     $("#searchTerm").on("input", function () {
-
+        alert("hola");
         $("#table").remove();
         (document.getElementById('resulDescripcion')).innerHTML = "";
         let idx = 1;
@@ -85,10 +85,10 @@ function introValor() {
         searchTerm = searchTerm.toLocaleLowerCase();
 
         var encontrado = ddbb.filter(function (element) {
-                // fecha de la base
-                if (element.descripcion.toLocaleLowerCase().includes("?date")){ // fecha de la base
-                    (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0,8);
-                };
+            // fecha de la base
+            if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
+                (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
+            };
 
             if (isNaN(searchTerm)) {  //si es numero o no 
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
@@ -107,7 +107,7 @@ function introValor() {
                 tabla2(element);
             });
 
-            if (idx <=  50) {
+            if (idx <= 50) {
 
                 const td2 = document.createElement("td");
                 td2.innerHTML = element.descripcion;
