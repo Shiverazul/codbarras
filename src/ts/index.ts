@@ -33,45 +33,21 @@ $(document).ready(function () {
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
+
+
         Borrar();
     });
 
     introValor();
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//function fechabase() {
+//    var encontrado = ddbb.filter(function (element) {
+//    // fecha de la base
+//        if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
+//        (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
+//    };
+//}    
 
 
 function introValor() {
@@ -86,9 +62,9 @@ function introValor() {
 
         var encontrado = ddbb.filter(function (element) {
             // fecha de la base
-            if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
-                (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
-            };
+            //if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
+            //    (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
+            //};
 
             if (isNaN(searchTerm)) {  //si es numero o no 
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
