@@ -18070,20 +18070,23 @@ function init() {
     introValor();
 }
 //function fechabase() {
-//    var encontrado = ddbb.filter(function (element) {
-//    // fecha de la base
+//    var encontradobase = ddbb.filter(function (element) {
+// fecha de la base
 //        if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
 //        (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
 //    };
 //}    
 function introValor() {
     $("#searchTerm").on("input", function () {
-        alert("hola");
+        //        alert("hola");
         $("#table").remove();
         (document.getElementById('resulDescripcion')).innerHTML = "";
         let idx = 1;
         let searchTerm = ($(this).val());
         searchTerm = searchTerm.toLocaleLowerCase();
+        //           if Number.isNaN(searchTerm))   {    
+        //               return alert ("numeric"); 
+        //           }
         var encontrado = ddbb.filter(function (element) {
             // fecha de la base
             //if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
