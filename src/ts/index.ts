@@ -58,11 +58,7 @@ function introValor() {
         let idx = 1;
         let searchTerm = ($(this).val());
         searchTerm = searchTerm.toLocaleLowerCase();
- //           if Number.isNaN(searchTerm))   {    
- //               return alert ("numeric"); 
- //           }
-
-
+ 
         var encontrado = ddbb.filter(function (element) {
             // fecha de la base
             //if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
@@ -73,11 +69,14 @@ function introValor() {
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
             }
             else {
+                if (searchTerm.length > 10) { 
                 return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
                     element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
                     element.codprov.toLocaleLowerCase().includes(searchTerm);
+                }
             }
-        });
+            });
+
 
         const table = document.createElement("table")
         encontrado.forEach(element => {
