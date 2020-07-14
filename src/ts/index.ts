@@ -64,11 +64,10 @@ function introValor() {
            if ((<HTMLInputElement>document.getElementById('verBase')).value = "Fecha Base") { 
                 if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
                     (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
-          }
+                }
             };
 
 
-            
             if (isNaN(searchTerm)) {  //si es numero o no 
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
             }
