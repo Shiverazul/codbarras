@@ -18093,7 +18093,7 @@ function introValor() {
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
             }
             else {
-                if (searchTerm.length > 10) {
+                if (searchTerm.length == 6 || searchTerm.length == 13) {
                     return element.articulo.toLocaleLowerCase().includes(searchTerm) ||
                         element.codigo2.toLocaleLowerCase().includes(searchTerm) ||
                         element.codprov.toLocaleLowerCase().includes(searchTerm);
