@@ -7595,7 +7595,7 @@
   {"articulo":"646217102511   ","codigo2":"               ","codprov":"               ","descripcion":"PINTURA NUMEROS REF10251                ","precio":"      12,95","stock":"0     "}, 
   {"articulo":"646217102788   ","codigo2":"               ","codprov":"               ","descripcion":"PINTURA NUMEROS REF10278                ","precio":"      10,99","stock":"0     "}, 
   {"articulo":"646217101767   ","codigo2":"               ","codprov":"               ","descripcion":"PINTURA NUMEROS REF710176               ","precio":"      13,95","stock":"0     "}, 
-  {"articulo":"8420425268205  ","codigo2":"               ","codprov":"r268-20        ","descripcion":"PINTURA OLIMPIC BLANCA 3KG              ","precio":"       9,95","stock":"-3    "}, 
+  {"articulo":"8420425268205  ","codigo2":"               ","codprov":"r268-20        ","descripcion":"PINTURA OLIMPIC BLANCA 3KG              ","precio":"       9,95","stock":"-4    "}, 
   {"articulo":"646217103389   ","codigo2":"               ","codprov":"               ","descripcion":"PINTURA PER NUMEROS REF.10338           ","precio":"      13,95","stock":"0     "}, 
   {"articulo":"646217100050   ","codigo2":"               ","codprov":"               ","descripcion":"PINTURA PER NUMEROS REF10005            ","precio":"      10,85","stock":"0     "}, 
   {"articulo":"646217101248   ","codigo2":"               ","codprov":"               ","descripcion":"PINTURA PER NUMEROS REF10124            ","precio":"      13,95","stock":"0     "}, 
@@ -8608,7 +8608,7 @@
   {"articulo":"8422619000028  ","codigo2":"               ","codprov":"               ","descripcion":"SUPER SEMENTOL 5KG.                     ","precio":"      35,95","stock":"1     "}, 
   {"articulo":"8411519190236  ","codigo2":"               ","codprov":"               ","descripcion":"SUPERCEYS 20GR GOTA                     ","precio":"       9,45","stock":"0     "}, 
   {"articulo":"8411519190014  ","codigo2":"504001         ","codprov":"               ","descripcion":"SUPERCEYS 3G                            ","precio":"       2,95","stock":"-13   "}, 
-  {"articulo":"8411519190175  ","codigo2":"504003         ","codprov":"               ","descripcion":"SUPERCEYS 6GR GOTA                      ","precio":"       4,95","stock":"4     "}, 
+  {"articulo":"8411519190175  ","codigo2":"504003         ","codprov":"               ","descripcion":"SUPERCEYS 6GR GOTA                      ","precio":"       4,95","stock":"3     "}, 
   {"articulo":"8411519191080  ","codigo2":"               ","codprov":"               ","descripcion":"SUPERCEYS PINCEL 5G                     ","precio":"       5,65","stock":"0     "}, 
   {"articulo":"8411519742039  ","codigo2":"504203         ","codprov":"               ","descripcion":"SUPERCEYS UNICK 3G                      ","precio":"       3,75","stock":"-27   "}, 
   {"articulo":"8411519742145  ","codigo2":"               ","codprov":"               ","descripcion":"SUPERCEYS UNICK X3 GEL                  ","precio":"       5,25","stock":"8     "}, 
@@ -9971,7 +9971,7 @@
   {"articulo":"8414800387315  ","codigo2":"               ","codprov":"00T056725      ","descripcion":"TX.ECO BRI.NEGRO 2,5L                   ","precio":"      39,99","stock":"2     "}, 
   {"articulo":"8414800416565  ","codigo2":"               ","codprov":"00T056714      ","descripcion":"TX.ECO BRI.NEGRO 250ML                  ","precio":"       7,45","stock":"15    "}, 
   {"articulo":"8414800387322  ","codigo2":"               ","codprov":"00T056734      ","descripcion":"TX.ECO BRI.NEGRO 750ML                  ","precio":"      15,98","stock":"4     "}, 
-  {"articulo":"8414800387490  ","codigo2":"               ","codprov":"00T058734      ","descripcion":"TX.ECO BRI.OCRE 750ML                   ","precio":"      15,98","stock":"0     "}, 
+  {"articulo":"8414800387490  ","codigo2":"               ","codprov":"00T058734      ","descripcion":"TX.ECO BRI.OCRE 750ML                   ","precio":"      15,98","stock":"2     "}, 
   {"articulo":"8414800387483  ","codigo2":"               ","codprov":"00T056034      ","descripcion":"TX.ECO BRI.ROJO CARR.750ML ESM          ","precio":"      15,98","stock":"4     "}, 
   {"articulo":"8414800387476  ","codigo2":"               ","codprov":"00T056534      ","descripcion":"TX.ECO BRI.ROJO CHIN.750ML ESM          ","precio":"      15,98","stock":"3     "}, 
   {"articulo":"8414800387544  ","codigo2":"               ","codprov":"00T055334      ","descripcion":"TX.ECO BRI.ROJO CORA.750ML ESM          ","precio":"      15,98","stock":"4     "}, 
@@ -10361,5 +10361,5 @@
   {"articulo":"8413204900021  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1/4KG                        ","precio":"       5,45","stock":"9     "}, 
   {"articulo":"8413204900045  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1KG.                         ","precio":"      15,45","stock":"1     "}, 
   {"articulo":"8420236031500  ","codigo2":"               ","codprov":"               ","descripcion":"ZUM II NEBULIZADOR                      ","precio":"       6,95","stock":"-2    "}, 
-  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20201209 ?date                          " , "precio" : " " , "stock" : " " }                                     
+  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20201210 ?date                          " , "precio" : " " , "stock" : " " }                                     
  ]                                                                                                                                                                                         
