@@ -25,7 +25,7 @@ $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
-        ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock ));
+        ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock, element.descCompra  ));
         //        console.log(Elemento);
         init();
     });
@@ -92,7 +92,7 @@ function introValor() {
             if (idx <= 80) {
 
                 const td2 = document.createElement("td");
-                td2.innerHTML = element.descripcion;
+                td2.innerHTML = element.descripcion.substring(0, 30);
                 node.appendChild(td2);
                 table.appendChild(node);
                 const td3 = document.createElement("td");

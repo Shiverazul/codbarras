@@ -18026,13 +18026,14 @@ __webpack_require__.r(__webpack_exports__);
 
 // CONCATENATED MODULE: ./src/ts/class.element.ts
 class Elemento {
-    constructor(articulo, codigo2, codprov, descripcion, precio, stock) {
+    constructor(articulo, codigo2, codprov, descripcion, precio, stock, descCompra) {
         this.articulo = articulo.replace(/\s/g, '');
         this.codigo2 = codigo2.replace(/\s/g, '');
         this.codprov = codprov.replace(/\s/g, '');
         this.descripcion = descripcion;
         this.precio = +precio.replace(/\s/g, '').replace(',', '.');
         this.stock = +stock.replace(/\s/g, '').replace(',', '.');
+        this.descCompra = +descCompra.replace(/\s/g, '').replace(',', '.');
     }
 }
 
@@ -18058,7 +18059,7 @@ document.body.style.backgroundSize = "75%";
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
     $.getJSON("A-HTML.json", function (data) {
-        ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
+        ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock, element.descCompra));
         //        console.log(Elemento);
         init();
     });
@@ -18111,7 +18112,7 @@ function introValor() {
             });
             if (idx <= 80) {
                 const td2 = document.createElement("td");
-                td2.innerHTML = element.descripcion;
+                td2.innerHTML = element.descripcion.substring(0, 30);
                 node.appendChild(td2);
                 table.appendChild(node);
                 const td3 = document.createElement("td");
