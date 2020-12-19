@@ -18135,7 +18135,7 @@ function introValor() {
                 table.appendChild(node);
                 const td7 = document.createElement("td");
                 td7.setAttribute('style', 'color: rgb(182, 184, 35)');
-                td7.innerHTML = "0";
+                td7.innerHTML = "";
                 node.appendChild(td7);
                 table.appendChild(node);
                 document.getElementById('resulDescripcion').appendChild(table);
