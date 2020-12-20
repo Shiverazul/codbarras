@@ -5,7 +5,6 @@ const $ = require("jquery");
 import html2canvas from 'html2canvas';
 
 let ddbb: Array<Elemento> = [];
-
  
 var f = new Date();
 var dd = String(f.getDate()).padStart(2, '0');
@@ -18,9 +17,6 @@ document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundAttachment = "fixed";
 document.body.style.backgroundSize = "75%";
 
-
-
-
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
@@ -30,7 +26,6 @@ $(document).ready(function () {
         init();
     });
 });
-
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -53,7 +48,6 @@ function init() {
 
 function introValor() {
     $("#searchTerm").on("input", function () {
-        //        alert("hola");
         $("#table").remove();
         (document.getElementById('resulDescripcion')).innerHTML = "";
         let idx = 1;
@@ -62,12 +56,15 @@ function introValor() {
  
         var encontrado = ddbb.filter(function (element) {
             // fecha de la base
-           if ((<HTMLInputElement>document.getElementById('verBase')).value = "Fecha Base") { 
+            if ((<HTMLInputElement>document.getElementById('verBase')).value = "Fecha Base") { 
                 if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
                     (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
                 }
             };
-
+                
+            if (element.descripcion.toLocaleLowerCase().includes("?descCompra")) { // averiguo descuento
+                (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
+            };
 
             if (isNaN(searchTerm)) {  //si es numero o no 
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
@@ -80,7 +77,6 @@ function introValor() {
                 }
             }
             });
-
 
         const table = document.createElement("table")
         encontrado.forEach(element => {
@@ -95,11 +91,13 @@ function introValor() {
                 td2.innerHTML = element.descripcion.substring(0, 30);
                 node.appendChild(td2);
                 table.appendChild(node);
+
                 const td3 = document.createElement("td");
                 td3.setAttribute('style', 'color: lightgreen');
                 td3.innerHTML = element.precio + "";
                 node.appendChild(td3);
                 table.appendChild(node);
+
                 const td4 = document.createElement("td");
                 td4.setAttribute('style', 'rgb(35, 137, 184)');
                 td4.innerHTML =  ".."    ;
@@ -122,22 +120,25 @@ function introValor() {
                 td7.innerHTML =  " " + element.descCompra + "" ;
                 node.appendChild(td7);
                 table.appendChild(node);
-                
-
-
 
                 document.getElementById('resulDescripcion').appendChild(table);
                 ++idx;
-
             }
-
         });
-
         (document.getElementById('verIdx')).innerHTML = idx-1+"";
-
+        $('td:nth-child(5)').hide();
+        $('td:nth-child(6)').hide();
+  
     })
-    
 }
+$("#ocultar").click(() => {
+//    alert("clicado");
+      $('td:nth-child(5)').show();
+      $('td:nth-child(6)').show();
+      $('th:nth-child(5)').show();
+      $('th:nth-child(6)').show();
+
+});
 
 function Borrar() {
 
@@ -206,6 +207,11 @@ function tabla2(element) {
         anadirPreciodeElemento(element.precio, +newcantidad.value, +newdescuento.value, newtotal);
         getTotal();
     });
+    $('td:nth-child(5)').show();
+    $('td:nth-child(6)').show();
+    $('th:nth-child(5)').show();
+    $('th:nth-child(6)').show();
+
     Borrar();
 
 }
@@ -228,7 +234,9 @@ function getTotal() {
     }
 }
 
+
 $("#download").click(() => {
+
     html2canvas(document.body).then(canvas => {
         var link = (<HTMLAnchorElement>document.getElementById('download'));
         var a = $("<a>")

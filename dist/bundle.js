@@ -18079,7 +18079,6 @@ function init() {
 //}    
 function introValor() {
     $("#searchTerm").on("input", function () {
-        //        alert("hola");
         $("#table").remove();
         (document.getElementById('resulDescripcion')).innerHTML = "";
         let idx = 1;
@@ -18091,6 +18090,10 @@ function introValor() {
                 if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
                     (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
                 }
+            }
+            ;
+            if (element.descripcion.toLocaleLowerCase().includes("?descCompra")) { // averiguo descuento
+                (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
             }
             ;
             if (isNaN(searchTerm)) { //si es numero o no 
@@ -18144,8 +18147,17 @@ function introValor() {
             }
         });
         (document.getElementById('verIdx')).innerHTML = idx - 1 + "";
+        $('td:nth-child(5)').hide();
+        $('td:nth-child(6)').hide();
     });
 }
+$("#ocultar").click(() => {
+    //    alert("clicado");
+    $('td:nth-child(5)').show();
+    $('td:nth-child(6)').show();
+    $('th:nth-child(5)').show();
+    $('th:nth-child(6)').show();
+});
 function Borrar() {
     document.getElementById('searchTerm').value = "";
     //    document.getElementById('searchTerm').focus();
@@ -18201,6 +18213,10 @@ function tabla2(element) {
         anadirPreciodeElemento(element.precio, +newcantidad.value, +newdescuento.value, newtotal);
         getTotal();
     });
+    $('td:nth-child(5)').show();
+    $('td:nth-child(6)').show();
+    $('th:nth-child(5)').show();
+    $('th:nth-child(6)').show();
     Borrar();
 }
 function anadirPreciodeElemento(precio, cantidad, newdescuento, totalElemento) {
