@@ -53,8 +53,8 @@ html,body {
     background-color:rgb(182, 184,35);
     background-color: red;
     float: right;
-    margin-right: 0px;
-    margin-top: 400px;
+    margin-right: 60px;
+    margin-top: 50px;
     width: 10px;
     padding-top:10px;
     padding-bottom:10px;
@@ -65,6 +65,34 @@ html,body {
     border-radius:100px;
     border-color:rgb(182, 184, 35);
 }    
+.screenshot2 {
+    top: 70px;
+    text-decoration:none;
+    font-weight: 10; 
+    font-size: 1px;
+    color: black;
+    border-color:rgb(182, 184, 35);
+    background-color:rgb(182, 184,35);
+    background-color: rgb(21, 255, 0);
+    float: right;
+    margin-right: 60px;
+    margin-top: 50px;
+    width: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:10px;
+    padding-right:10px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:100px;
+    border-color:rgb(182, 184, 35);
+}    
+.screenshot,
+.respuesta2{
+    margin: 50px 50;
+    padding: 100;
+    display: inline-block;
+}
 
 .datos{
     font-family:'Times New Roman', Times, serif;
