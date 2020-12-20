@@ -7,7 +7,8 @@ export class Elemento {
     public precio: number;
     public stock: number;
     public descCompra: number;
-    constructor(articulo: string, codigo2: string, codprov: string, descripcion: string, precio: string, stock: string, descCompra:string) {
+
+    constructor(articulo: string, codigo2: string, codprov: string, descripcion: string, precio: string, stock: string, descCompra: string ) {
         this.articulo = articulo.replace(/\s/g, '');
         this.codigo2 = codigo2.replace(/\s/g, '');
         this.codprov = codprov.replace(/\s/g, '');

@@ -18060,7 +18060,7 @@ $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
     $.getJSON("A-HTML.json", function (data) {
         ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock, element.descCompra));
-        //        console.log(Elemento);
+        //    console.log(Elemento);
         init();
     });
 });
@@ -18136,7 +18136,7 @@ function introValor() {
                 table.appendChild(node);
                 const td7 = document.createElement("td");
                 td7.setAttribute('style', 'color: rgb(182, 184, 35)');
-                td7.innerHTML = "";
+                td7.innerHTML = " " + element.descCompra + "";
                 node.appendChild(td7);
                 table.appendChild(node);
                 document.getElementById('resulDescripcion').appendChild(table);
