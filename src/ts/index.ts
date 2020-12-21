@@ -5,7 +5,7 @@ const $ = require("jquery");
 import html2canvas from 'html2canvas';
 
 let ddbb: Array<Elemento> = [];
-
+ 
 var f = new Date();
 var dd = String(f.getDate()).padStart(2, '0');
 var mm = String(f.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -17,19 +17,15 @@ document.body.style.backgroundRepeat = "no-repeat";
 document.body.style.backgroundAttachment = "fixed";
 document.body.style.backgroundSize = "75%";
 
-
-
-
 $(document).ready(function () {
     document.getElementById("table3").innerHTML = "<tr><th></th><th>Descripció</th><th>Preu</th><th>Cant</th><th>Desc</th><th>TOTAL</th></tr>";
 
     $.getJSON("A-HTML.json", function (data) {
-        ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock));
-        //        console.log(Elemento);
+        ddbb = data.map(element => new Elemento(element.articulo, element.codigo2, element.codprov, element.descripcion, element.precio, element.stock, element.descCompra ));
+            //    console.log(Elemento);
         init();
     });
 });
-
 
 function init() {
     document.getElementById("borrar").addEventListener("click", () => {
@@ -52,7 +48,6 @@ function init() {
 
 function introValor() {
     $("#searchTerm").on("input", function () {
-        //        alert("hola");
         $("#table").remove();
         (document.getElementById('resulDescripcion')).innerHTML = "";
         let idx = 1;
@@ -61,12 +56,15 @@ function introValor() {
  
         var encontrado = ddbb.filter(function (element) {
             // fecha de la base
-           if ((<HTMLInputElement>document.getElementById('verBase')).value = "Fecha Base") { 
+            if ((<HTMLInputElement>document.getElementById('verBase')).value = "Fecha Base") { 
                 if (element.descripcion.toLocaleLowerCase().includes("?date")) { // fecha de la base
                     (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
                 }
             };
-
+                
+            if (element.descripcion.toLocaleLowerCase().includes("?descCompra")) { // averiguo descuento
+                (document.getElementById('verBase')).innerHTML = element.descripcion.substring(0, 8);
+            };
 
             if (isNaN(searchTerm)) {  //si es numero o no 
                 return element.descripcion.toLocaleLowerCase().includes(searchTerm);
@@ -80,7 +78,6 @@ function introValor() {
             }
             });
 
-
         const table = document.createElement("table")
         encontrado.forEach(element => {
             const node = document.createElement("tr");
@@ -88,29 +85,60 @@ function introValor() {
                 tabla2(element);
             });
 
-            if (idx <= 50) {
+            if (idx <= 80) {
 
                 const td2 = document.createElement("td");
-                td2.innerHTML = element.descripcion;
+                td2.innerHTML = element.descripcion.substring(0, 30);
                 node.appendChild(td2);
                 table.appendChild(node);
+
                 const td3 = document.createElement("td");
                 td3.setAttribute('style', 'color: lightgreen');
                 td3.innerHTML = element.precio + "";
                 node.appendChild(td3);
                 table.appendChild(node);
+
                 const td4 = document.createElement("td");
-                td4.setAttribute('style', 'color: green');
-                td4.innerHTML = element.stock + "";
+                td4.setAttribute('style', 'rgb(35, 137, 184)');
+                td4.innerHTML =  ".."    ;
                 node.appendChild(td4);
+
+                const td5 = document.createElement("td");
+                td5.setAttribute('style', 'color: green');
+                td5.innerHTML =  "  " + element.stock + "";
+                node.appendChild(td5);
                 table.appendChild(node);
+
+                const td6 = document.createElement("td");
+                td6.setAttribute('style', 'rgb(35, 137, 184)');
+                td6.innerHTML =  ".."    ;
+                node.appendChild(td6);
+                table.appendChild(node);
+
+                const td7 = document.createElement("td");
+                td7.setAttribute('style', 'color: rgb(182, 184, 35)');
+                td7.innerHTML =  " " + element.descCompra + "" ;
+                node.appendChild(td7);
+                table.appendChild(node);
+
                 document.getElementById('resulDescripcion').appendChild(table);
                 ++idx;
-
             }
-        })
+        });
+        (document.getElementById('verIdx')).innerHTML = idx-1+"";
+        $('td:nth-child(5)').hide();
+        $('td:nth-child(6)').hide();
+  
     })
 }
+$("#ocultar").click(() => {
+//    alert("clicado");
+      $('td:nth-child(5)').show();
+      $('td:nth-child(6)').show();
+      $('th:nth-child(5)').show();
+      $('th:nth-child(6)').show();
+
+});
 
 function Borrar() {
 
@@ -179,6 +207,11 @@ function tabla2(element) {
         anadirPreciodeElemento(element.precio, +newcantidad.value, +newdescuento.value, newtotal);
         getTotal();
     });
+    $('td:nth-child(5)').show();
+    $('td:nth-child(6)').show();
+    $('th:nth-child(5)').show();
+    $('th:nth-child(6)').show();
+
     Borrar();
 
 }
@@ -201,7 +234,9 @@ function getTotal() {
     }
 }
 
+
 $("#download").click(() => {
+
     html2canvas(document.body).then(canvas => {
         var link = (<HTMLAnchorElement>document.getElementById('download'));
         var a = $("<a>")

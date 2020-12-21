@@ -53,18 +53,44 @@ html,body {
     background-color:rgb(182, 184,35);
     background-color: red;
     float: right;
-    margin-right: 0px;
-    margin-top: 400px;
+    margin-right: 60px;
+    margin-top: 20px;
     width: 10px;
     padding-top:10px;
     padding-bottom:10px;
-    padding-left:10px;
+    padding-left:30px;
+    padding-right:0px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius:100px;
+}    
+.screenshot2 {
+    top: 70px;
+    text-decoration:none;
+    font-weight: 10; 
+    font-size: 1px;
+    color: black;
+    border-color:rgb(182, 184, 35);
+    background-color:rgb(182, 184,35);
+    background-color: rgba(0, 132, 255, 0.164);
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    width: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:20px;
     padding-right:10px;
     border-width: 3px;
     border-style: solid;
     border-radius:100px;
-    border-color:rgb(182, 184, 35);
 }    
+.screenshot,
+.respuesta2{
+    margin: 50px 50;
+    padding: 100;
+    display: inline-block;
+}
 
 .datos{
     font-family:'Times New Roman', Times, serif;
@@ -85,11 +111,24 @@ html,body {
     color: rgb(35, 137, 184);
     position: relative;
     margin-top: 0px;
-    margin-left: 250px;
+    margin-left: 240px;
+}
+.index{
+    color:rgb(182, 184, 35);
+    position: relative;
+    margin-top: 0px;
+    font-size:  8px;
+    margin-left: 00px;
+ }
+.fecha,
+.index{
+    margin: 10px 5;
+    padding: 0;
+    display: inline-block;
 }
 .respuesta{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 13px;
+    font-size: 12px;
     width: 90% ;
     color: rgb(35, 137, 184);
     position: relative;
