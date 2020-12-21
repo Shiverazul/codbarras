@@ -1591,7 +1591,7 @@
   {"articulo":"184229         ","codigo2":"               ","codprov":"               ","descripcion":"BOLAS POREXPAN 90MM                     ","precio":"       1,10","stock":"12    ","descCompra":"50,66"}, 
   {"articulo":"8412490021014  ","codigo2":"8412490500014  ","codprov":"               ","descripcion":"BOLASECA ANTIHUMEDAD BASE               ","precio":"       5,99","stock":"0     ","descCompra":"42,9 "}, 
   {"articulo":"8411569008017  ","codigo2":"               ","codprov":"               ","descripcion":"BOLSA ANTIHUMEDAD GOLIAT                ","precio":"       2,99","stock":"1     ","descCompra":"48,29"}, 
-  {"articulo":"116909         ","codigo2":"300054         ","codprov":"62             ","descripcion":"BOLSAS CAMISETA 40X60                   ","precio":"       0,02","stock":"-953  ","descCompra":"0    "}, 
+  {"articulo":"116909         ","codigo2":"300054         ","codprov":"62             ","descripcion":"BOLSAS CAMISETA 40X60                   ","precio":"       0,02","stock":"-954  ","descCompra":"0    "}, 
   {"articulo":"159678         ","codigo2":"               ","codprov":"               ","descripcion":"BOLSAS MOSAICOS Nº5 ARTYMAN             ","precio":"       4,95","stock":"1     ","descCompra":"42,63"}, 
   {"articulo":"8429497300271  ","codigo2":"               ","codprov":"               ","descripcion":"BONAPINT ORO PURPURINA AL ALCO          ","precio":"       4,60","stock":"0     ","descCompra":"42,38"}, 
   {"articulo":"8429497300288  ","codigo2":"               ","codprov":"               ","descripcion":"BONAPINT PLATA  PURPURINA AL A          ","precio":"       4,90","stock":"0     ","descCompra":"45,91"}, 
@@ -2517,7 +2517,7 @@
   {"articulo":"8436529880311  ","codigo2":"               ","codprov":"K24            ","descripcion":"CINTA KLEVER 24X45 IMEX                 ","precio":"       1,10","stock":"111   ","descCompra":"58,35"}, 
   {"articulo":"8436529880014  ","codigo2":"               ","codprov":"8427492106560  ","descripcion":"CINTA KLEVER 24X45 IMEX                 ","precio":"       1,10","stock":"59    ","descCompra":"57,06"}, 
   {"articulo":"8436529880021  ","codigo2":"8436529880328  ","codprov":"K30            ","descripcion":"CINTA KLEVER 30X45 IMEX                 ","precio":"       1,40","stock":"145   ","descCompra":"59,21"}, 
-  {"articulo":"8436529880335  ","codigo2":"               ","codprov":"               ","descripcion":"CINTA KLEVER 36X45 IMEX                 ","precio":"       1,80","stock":"179   ","descCompra":"60,64"}, 
+  {"articulo":"8436529880335  ","codigo2":"               ","codprov":"               ","descripcion":"CINTA KLEVER 36X45 IMEX                 ","precio":"       1,80","stock":"167   ","descCompra":"60,64"}, 
   {"articulo":"8436529880045  ","codigo2":"8436529880342  ","codprov":"K48            ","descripcion":"CINTA KLEVER 48X45 IMEX                 ","precio":"       2,20","stock":"69    ","descCompra":"57,06"}, 
   {"articulo":"185417         ","codigo2":"               ","codprov":"               ","descripcion":"CINTA KLEVER 60X45 IMEX                 ","precio":"       3,45","stock":"37    ","descCompra":"56,33"}, 
   {"articulo":"179584         ","codigo2":"               ","codprov":"               ","descripcion":"CINTA KLEVER LILA 25X50                 ","precio":"       6,65","stock":"5     ","descCompra":"44,58"}, 
@@ -3120,7 +3120,7 @@
   {"articulo":"8436542382113  ","codigo2":"222A5T-00/L02  ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL 500 DISOL          ","precio":"       3,40","stock":"1     ","descCompra":"45,43"}, 
   {"articulo":"8426259337391  ","codigo2":"               ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL 500 LEPA           ","precio":"       4,60","stock":"0     ","descCompra":"47,03"}, 
   {"articulo":"8428136000114  ","codigo2":"8436542382144  ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL 5L                 ","precio":"      14,65","stock":"-4    ","descCompra":"55,65"}, 
-  {"articulo":"8435018802216  ","codigo2":"020201         ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL 5LT INDIS          ","precio":"      16,95","stock":"1     ","descCompra":"46,39"}, 
+  {"articulo":"8435018802216  ","codigo2":"020201         ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL 5LT INDIS          ","precio":"      16,95","stock":"0     ","descCompra":"46,39"}, 
   {"articulo":"8436032031781  ","codigo2":"               ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL BAYIC 5LT          ","precio":"      12,45","stock":"3     ","descCompra":"45,36"}, 
   {"articulo":"100854         ","codigo2":"               ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL EXTRA 25L          ","precio":"      69,45","stock":"0     ","descCompra":"39,39"}, 
   {"articulo":"8420239400037  ","codigo2":"               ","codprov":"               ","descripcion":"DISOLVENTE UNIVERSAL ICOPRE 5L          ","precio":"      21,75","stock":"0     ","descCompra":"52,18"}, 
@@ -10037,7 +10037,7 @@
   {"articulo":"8414800416596  ","codigo2":"1              ","codprov":"01T056614      ","descripcion":"TX.ECO SAT.BLANCO 250ML                 ","precio":"       7,45","stock":"3     ","descCompra":"37,66"}, 
   {"articulo":"8414800427332  ","codigo2":"               ","codprov":"               ","descripcion":"TX.ECO SAT.BLANCO 4L                    ","precio":"      69,99","stock":"2     ","descCompra":"40,56"}, 
   {"articulo":"8414800387568  ","codigo2":"               ","codprov":"01T056634      ","descripcion":"TX.ECO SAT.BLANCO 750ML                 ","precio":"      15,98","stock":"0     ","descCompra":"34,92"}, 
-  {"articulo":"8414800387803  ","codigo2":"               ","codprov":"01T055034      ","descripcion":"TX.ECO SAT.GRIS MARE.750ML ESM          ","precio":"      15,98","stock":"6     ","descCompra":"37,45"}, 
+  {"articulo":"8414800387803  ","codigo2":"               ","codprov":"01T055034      ","descripcion":"TX.ECO SAT.GRIS MARE.750ML ESM          ","precio":"      15,98","stock":"4     ","descCompra":"37,45"}, 
   {"articulo":"8414800387629  ","codigo2":"               ","codprov":"01T054934      ","descripcion":"TX.ECO SAT.GRIS MED. 750ML ESM          ","precio":"      15,98","stock":"3     ","descCompra":"34,92"}, 
   {"articulo":"8414800387612  ","codigo2":"               ","codprov":"01T050925      ","descripcion":"TX.ECO SAT.GRIS PER. 2,5L  ESM          ","precio":"      39,99","stock":"0     ","descCompra":"75,95"}, 
   {"articulo":"8414800387605  ","codigo2":"               ","codprov":"01T050934      ","descripcion":"TX.ECO SAT.GRIS PER. 750ML ESM          ","precio":"      15,98","stock":"5     ","descCompra":"34,92"}, 
@@ -10380,5 +10380,5 @@
   {"articulo":"8413204900021  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1/4KG                        ","precio":"       5,45","stock":"9     ","descCompra":"44,19"}, 
   {"articulo":"8413204900045  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1KG.                         ","precio":"      15,45","stock":"1     ","descCompra":"38,57"}, 
   {"articulo":"8420236031500  ","codigo2":"               ","codprov":"               ","descripcion":"ZUM II NEBULIZADOR                      ","precio":"       6,95","stock":"-2    ","descCompra":"42,43"}, 
-  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20201221-99 ?date                          " , "precio" : " " , "stock" : " " , "descCompra" : " " }                                     
+  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20201221 ?date                          " , "precio" : " " , "stock" : " " , "descCompra" : " " }                                     
  ]                                                                                                                                                                                                              
