@@ -108,17 +108,30 @@ function introValor() {
                 td5.innerHTML =  "  " + element.stock + "";
                 node.appendChild(td5);
                 table.appendChild(node);
-
+                // meto 2 mas en blanco a ver que pasa
+                //de aqui hastaaaaaaaaaaa
                 const td6 = document.createElement("td");
                 td6.setAttribute('style', 'rgb(35, 137, 184)');
-                td6.innerHTML =  ".."    ;
+                td6.innerHTML =  "  "    ;
                 node.appendChild(td6);
                 table.appendChild(node);
-
                 const td7 = document.createElement("td");
                 td7.setAttribute('style', 'color: rgb(182, 184, 35)');
-                td7.innerHTML =  " " + element.descCompra + "" ;
+                td7.innerHTML =  "  "  ;
                 node.appendChild(td7);
+                table.appendChild(node);
+                //de aqui   evito que en las otras tablas desaparezca las columnas
+
+                const td8 = document.createElement("td");
+                td8.setAttribute('style', 'rgb(35, 137, 184)');
+                td8.innerHTML =  "8"    ;
+                node.appendChild(td8);
+                table.appendChild(node);
+
+                const td9 = document.createElement("td");
+                td9.setAttribute('style', 'color: rgb(182, 184, 35)');
+                td9.innerHTML =  " " + element.descCompra + "" ;
+                node.appendChild(td9);
                 table.appendChild(node);
 
                 document.getElementById('resulDescripcion').appendChild(table);
@@ -126,17 +139,21 @@ function introValor() {
             }
         });
         (document.getElementById('verIdx')).innerHTML = idx-1+"";
-        $('td:nth-child(5)').hide();
-        $('td:nth-child(6)').hide();
+         $('td:nth-child(7)').hide();
+        $('td:nth-child(8)').hide();
+        $('td:nth-child(9)').hide();
   
     })
 }
-$("#ocultar").click(() => {
-//    alert("clicado");
-      $('td:nth-child(5)').show();
-      $('td:nth-child(6)').show();
-      $('th:nth-child(5)').show();
-      $('th:nth-child(6)').show();
+
+
+$("#resulTotalisimo").click(() => {
+//$("#ocultar").click(() => {
+        //    alert("clicado");
+      $('td:nth-child(8)').show();
+      $('td:nth-child(9)').show();
+      $('th:nth-child(8)').show();
+      $('th:nth-child(9)').show();
 
 });
 
@@ -145,7 +162,9 @@ function Borrar() {
     (<HTMLInputElement>document.getElementById('searchTerm')).value = "";
     //    document.getElementById('searchTerm').focus();
     //@ts-ignore
-    (document.getElementById('resulDescripcion')).innerHTML = ""
+    (document.getElementById('resulDescripcion')).innerHTML = "";
+    (document.getElementById('verIdx')).innerHTML = "";
+
 }
 
 function tabla2(element) {
@@ -233,7 +252,6 @@ function getTotal() {
         document.getElementById('resulTotalisimo').innerHTML = total.toFixed(2)
     }
 }
-
 
 $("#download").click(() => {
 
