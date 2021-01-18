@@ -701,7 +701,7 @@
   {"articulo":"8421058000132  ","codigo2":"               ","codprov":"               ","descripcion":"AGUARRAS PURO DIPISTOL 750ML            ","precio":"       5,75","stock":"0     ","descCompra":"50,86"}, 
   {"articulo":"8436542382328  ","codigo2":"222A8T-00/B16  ","codprov":"               ","descripcion":"AGUARRAS PURO DISOLB 1000ML             ","precio":"       4,25","stock":"-23   ","descCompra":"51,36"}, 
   {"articulo":"8436542382359  ","codigo2":"222A8T-00/B08  ","codprov":"               ","descripcion":"AGUARRAS PURO DISOLB 500ML              ","precio":"       3,25","stock":"0     ","descCompra":"53,01"}, 
-  {"articulo":"8435018820135  ","codigo2":"               ","codprov":"200103         ","descripcion":"AGUARRAS PURO INDISOL 1000ML            ","precio":"       4,85","stock":"1     ","descCompra":"50,56"}, 
+  {"articulo":"8435018820135  ","codigo2":"               ","codprov":"200103         ","descripcion":"AGUARRAS PURO INDISOL 1000ML            ","precio":"       4,85","stock":"0     ","descCompra":"50,56"}, 
   {"articulo":"8435018820111  ","codigo2":"8436542382908  ","codprov":"200101         ","descripcion":"AGUARRAS PURO INDISOL 250ML             ","precio":"       1,95","stock":"-29   ","descCompra":"53,4 "}, 
   {"articulo":"8435018820128  ","codigo2":"               ","codprov":"200102         ","descripcion":"AGUARRAS PURO INDISOL 500ML             ","precio":"       2,95","stock":"-5    ","descCompra":"52,94"}, 
   {"articulo":"8435018820210  ","codigo2":"8436032030289  ","codprov":"200201         ","descripcion":"AGUARRAS PURO INDISOL 5LT               ","precio":"      20,45","stock":"9     ","descCompra":"44,45"}, 
@@ -2705,7 +2705,7 @@
   {"articulo":"8429656061357  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA INTER 750M          ","precio":"       9,50","stock":"0     ","descCompra":"99,99"}, 
   {"articulo":"8429656060787  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA INTERMEDIO          ","precio":"      24,99","stock":"3     ","descCompra":"29,35"}, 
   {"articulo":"8429656023546  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA MATIZ               ","precio":"      24,99","stock":"0     ","descCompra":"45,68"}, 
-  {"articulo":"8429656038915  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA NATURAL             ","precio":"      24,99","stock":"2     ","descCompra":"29,35"}, 
+  {"articulo":"8429656038915  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA NATURAL             ","precio":"      24,99","stock":"1     ","descCompra":"29,35"}, 
   {"articulo":"8429656038816  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA SUAVE               ","precio":"      24,99","stock":"7     ","descCompra":"29,35"}, 
   {"articulo":"8429656038939  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO KENIA SUAVE 750M          ","precio":"       9,50","stock":"1     ","descCompra":"45,5 "}, 
   {"articulo":"8429656023478  ","codigo2":"               ","codprov":"               ","descripcion":"COLORES MUNDO MEDITERR MATIZ            ","precio":"      24,99","stock":"5     ","descCompra":"45,68"}, 
@@ -3223,7 +3223,7 @@
   {"articulo":"175661         ","codigo2":"               ","codprov":"               ","descripcion":"ECOL.LEPANTO GRAFITO 15LT               ","precio":"     124,25","stock":"0     ","descCompra":"74,6 "}, 
   {"articulo":"8426259161019  ","codigo2":"               ","codprov":"16101          ","descripcion":"ECOLOGICA EXT.LEPANTO 25KG              ","precio":"      54,99","stock":"7     ","descCompra":"30   "}, 
   {"articulo":"8426259161057  ","codigo2":"               ","codprov":"16105          ","descripcion":"ECOLOGICA EXT.LEPANTO 5KG               ","precio":"      19,89","stock":"78    ","descCompra":"51,14"}, 
-  {"articulo":"8426259161088  ","codigo2":"               ","codprov":"16108          ","descripcion":"ECOLOGICA EXT.LEPANTO 750ML             ","precio":"       8,75","stock":"16    ","descCompra":"46,49"}, 
+  {"articulo":"8426259161088  ","codigo2":"               ","codprov":"16108          ","descripcion":"ECOLOGICA EXT.LEPANTO 750ML             ","precio":"       8,75","stock":"15    ","descCompra":"46,49"}, 
   {"articulo":"8426259121082  ","codigo2":"               ","codprov":"               ","descripcion":"ECOLOGICA INT. LEPANTO 1 KG             ","precio":"       8,95","stock":"0     ","descCompra":"99,99"}, 
   {"articulo":"8426259125455  ","codigo2":"               ","codprov":"               ","descripcion":"ECOLOGICA LEPANTO !!CENTENO 4L          ","precio":"      21,99","stock":"0     ","descCompra":"32,56"}, 
   {"articulo":"8426259123956  ","codigo2":"12395          ","codprov":"               ","descripcion":"ECOLOGICA LEPANTO !!CHOCOLATE           ","precio":"      21,99","stock":"0     ","descCompra":"32,56"}, 
@@ -9565,7 +9565,7 @@
   {"articulo":"8414800006865  ","codigo2":"               ","codprov":"001052338      ","descripcion":"TITANLUX ROJO VIVO 375ML                ","precio":"       9,45","stock":"8     ","descCompra":"33,39"}, 
   {"articulo":"8414800006858  ","codigo2":"               ","codprov":"001052334      ","descripcion":"TITANLUX ROJO VIVO 750ML                ","precio":"      13,99","stock":"0     ","descCompra":"34,14"}, 
   {"articulo":"8414800009897  ","codigo2":"               ","codprov":"001056134      ","descripcion":"TITANLUX ROSA 750ML                     ","precio":"      12,99","stock":"1     ","descCompra":"39,78"}, 
-  {"articulo":"8414800008562  ","codigo2":"               ","codprov":"001054419      ","descripcion":"TITANLUX TABACO 125ML                   ","precio":"       5,49","stock":"4     ","descCompra":"22,76"}, 
+  {"articulo":"8414800008562  ","codigo2":"               ","codprov":"001054419      ","descripcion":"TITANLUX TABACO 125ML                   ","precio":"       5,49","stock":"3     ","descCompra":"22,76"}, 
   {"articulo":"8414800008548  ","codigo2":"               ","codprov":"001054438      ","descripcion":"TITANLUX TABACO 375ML                   ","precio":"       8,99","stock":"7     ","descCompra":"37,63"}, 
   {"articulo":"8414800008524  ","codigo2":"               ","codprov":"001054404      ","descripcion":"TITANLUX TABACO 4L                      ","precio":"      61,59","stock":"-3    ","descCompra":"40,88"}, 
   {"articulo":"8414800008579  ","codigo2":"               ","codprov":"001054450      ","descripcion":"TITANLUX TABACO 50ML                    ","precio":"       3,85","stock":"1     ","descCompra":"59,35"}, 
@@ -10410,5 +10410,5 @@
   {"articulo":"8413204900021  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1/4KG                        ","precio":"       5,45","stock":"9     ","descCompra":"44,19"}, 
   {"articulo":"8413204900045  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1KG.                         ","precio":"      15,45","stock":"1     ","descCompra":"38,57"}, 
   {"articulo":"8420236031500  ","codigo2":"               ","codprov":"               ","descripcion":"ZUM II NEBULIZADOR                      ","precio":"       6,95","stock":"-2    ","descCompra":"42,43"}, 
-  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20210116 ?date                          " , "precio" : " " , "stock" : " " , "descCompra" : " " }                                     
+  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20210118 ?date                          " , "precio" : " " , "stock" : " " , "descCompra" : " " }                                     
  ]                                                                                                                                                                                                              
