@@ -1263,7 +1263,7 @@
   {"articulo":"8414800153866  ","codigo2":"               ","codprov":"               ","descripcion":"BIOLUX MATE BLANCO 4L                   ","precio":"      15,99","stock":"-6    ","descCompra":"37,01"}, 
   {"articulo":"3239914785001  ","codigo2":"               ","codprov":"               ","descripcion":"BIORETHANE LIMPIADOR 1000ML             ","precio":"       9,44","stock":"1     ","descCompra":"99,79"}, 
   {"articulo":"79946360103    ","codigo2":"               ","codprov":"               ","descripcion":"BISTURI X-ACTO                          ","precio":"       6,30","stock":"-2    ","descCompra":"51,12"}, 
-  {"articulo":"111249         ","codigo2":"               ","codprov":"               ","descripcion":"BISULFITO SODICO 15KG                   ","precio":"      29,99","stock":"5     ","descCompra":"38,14"}, 
+  {"articulo":"111249         ","codigo2":"               ","codprov":"               ","descripcion":"BISULFITO SODICO 15KG                   ","precio":"      29,99","stock":"3     ","descCompra":"38,14"}, 
   {"articulo":"8414800048148  ","codigo2":"               ","codprov":"09G000106      ","descripcion":"BIZANCIO BLANCO TITANIO 20ML            ","precio":"       3,60","stock":"2     ","descCompra":"64,94"}, 
   {"articulo":"8414800049671  ","codigo2":"               ","codprov":"               ","descripcion":"BIZANCIO OLEO BITUME 20ML               ","precio":"       4,50","stock":"0     ","descCompra":"55,12"}, 
   {"articulo":"8414800050073  ","codigo2":"               ","codprov":"               ","descripcion":"BIZANCIO OLEO PLATA 20ML                ","precio":"       8,45","stock":"0     ","descCompra":"51,31"}, 
@@ -1742,8 +1742,8 @@
   {"articulo":"8712079225506  ","codigo2":"               ","codprov":"96000008       ","descripcion":"CARBONCILLO GRUESO 12-14MMTALE          ","precio":"       1,60","stock":"4     ","descCompra":"51,09"}, 
   {"articulo":"8712079225490  ","codigo2":"               ","codprov":"96000007       ","descripcion":"CARBONCILLO GRUESO 7-9MMTALENS          ","precio":"       0,40","stock":"1     ","descCompra":"51,34"}, 
   {"articulo":"8712079384920  ","codigo2":"               ","codprov":"9600032M       ","descripcion":"CARBONCILLO MEDIO 5-6 MM 3UND           ","precio":"       1,70","stock":"12    ","descCompra":"42,83"}, 
-  {"articulo":"8712079225483  ","codigo2":"               ","codprov":"96000006       ","descripcion":"CARBONCILLO MEDIO 5-6MM TALENS          ","precio":"       0,25","stock":"22    ","descCompra":"53,55"}, 
-  {"articulo":"8712079225476  ","codigo2":"               ","codprov":"96000005       ","descripcion":"CARBONCILLO PEQ 2-3MM TALENS            ","precio":"       0,20","stock":"92    ","descCompra":"59,61"}, 
+  {"articulo":"8712079225483  ","codigo2":"               ","codprov":"96000006       ","descripcion":"CARBONCILLO MEDIO 5-6MM TALENS          ","precio":"       0,25","stock":"19    ","descCompra":"53,55"}, 
+  {"articulo":"8712079225476  ","codigo2":"               ","codprov":"96000005       ","descripcion":"CARBONCILLO PEQ 2-3MM TALENS            ","precio":"       0,20","stock":"52    ","descCompra":"59,61"}, 
   {"articulo":"124614         ","codigo2":"8424599001569  ","codprov":"6171102        ","descripcion":"CARBONCILLO REF 102                     ","precio":"       0,85","stock":"1     ","descCompra":"48,03"}, 
   {"articulo":"8712079384937  ","codigo2":"               ","codprov":"9600033M       ","descripcion":"CARBONCILLOS GRUESO 7-9MM 3 UN          ","precio":"       1,95","stock":"11    ","descCompra":"47,57"}, 
   {"articulo":"8424599001545  ","codigo2":"               ","codprov":"6171100        ","descripcion":"CARBONCILLOS LEAM Nº100                 ","precio":"       0,45","stock":"6     ","descCompra":"46,71"}, 
@@ -9629,5 +9629,5 @@
   {"articulo":"8413204900021  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1/4KG                        ","precio":"       5,45","stock":"8     ","descCompra":"44,19"}, 
   {"articulo":"8413204900045  ","codigo2":"               ","codprov":"               ","descripcion":"ZOTAL LATA 1KG.                         ","precio":"      15,95","stock":"1     ","descCompra":"40,34"}, 
   {"articulo":"8420236031500  ","codigo2":"               ","codprov":"               ","descripcion":"ZUM II NEBULIZADOR                      ","precio":"       6,95","stock":"-5    ","descCompra":"42,43"}, 
-  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20221224 ?date                          " , "precio" : " " , "stock" : " " , "descCompra" : " " }                                     
+  {"articulo" : " " , "codigo2" : " ", "codprov" : " " , "descripcion" : "20221227 ?date                          " , "precio" : " " , "stock" : " " , "descCompra" : " " }                                     
  ]                                                                                                                                                                                                              
